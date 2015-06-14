@@ -20,6 +20,7 @@ class ManagementScene
 
 		void ChangeScene();
 
-
+		DataScene::eScene NowScene();
+		void NextScene(DataScene::eScene nextScene);
 };
 

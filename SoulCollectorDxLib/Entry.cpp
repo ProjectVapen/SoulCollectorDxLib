@@ -24,7 +24,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	ChangeWindowMode(TRUE),	
 	SetGraphMode(entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), 32);	
 	SetDrawScreen(DX_SCREEN_BACK);
-
 	if (DxLib_Init() == -1)    // ‚c‚wƒ‰ƒCƒuƒ‰ƒŠ‰Šú‰»ˆ—
 	{
 		return -1;

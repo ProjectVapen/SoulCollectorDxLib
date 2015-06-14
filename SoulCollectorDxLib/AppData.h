@@ -1,4 +1,10 @@
 #pragma once
+/*
+	ゲーム全体のデータクラス
+
+
+
+*/
 #include "DataCard.h"
 #include "DataEnemy.h"
 #include "DataMedium.h"

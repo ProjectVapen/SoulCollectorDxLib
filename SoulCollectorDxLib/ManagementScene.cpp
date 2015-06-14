@@ -11,6 +11,13 @@ ManagementScene::ManagementScene(){
 
 ManagementScene::~ManagementScene()
 {
+	
+}
+
+
+void ManagementScene::ChangeScene(){
+
+
 	switch (m_pDataScene->NextScene())
 	{
 	case DataScene::eScene::eTitle:
@@ -22,7 +29,7 @@ ManagementScene::~ManagementScene()
 	case DataScene::eScene::eStart:
 		m_pDataScene->PrevScene(DataScene::eScene::eTitle);
 		m_pDataScene->NowScene(DataScene::eScene::eStart);
-		m_pDataScene->NextScene(DataScene::eScene::eBattle); 
+		m_pDataScene->NextScene(DataScene::eScene::eBattle);
 		break;
 
 	case DataScene::eScene::eBattle:
@@ -41,7 +48,10 @@ ManagementScene::~ManagementScene()
 	}
 }
 
+DataScene::eScene ManagementScene::NowScene(){
+	return m_pDataScene->NowScene();
+}
 
-void ManagementScene::ChangeScene(){
-
+void ManagementScene::NextScene(DataScene::eScene nextScene){
+	 m_pDataScene->NextScene(nextScene);
 }

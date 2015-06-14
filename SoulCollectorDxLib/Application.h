@@ -18,7 +18,6 @@ class Application
 		Application();
 		~Application();
 
-		void UpData();
 		void AppMain();
 };
 
