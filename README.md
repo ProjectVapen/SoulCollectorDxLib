@@ -1,0 +1,2 @@
+# SoulCollectorDxLib
+DxLib版のSoulCollector
