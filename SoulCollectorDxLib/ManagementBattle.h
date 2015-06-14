@@ -4,7 +4,7 @@
 #include "BattleMedium.h"
 #include "BattlePlayer.h"
 
-#include <memory>
+#include "Include.h"
 class ManagementBattle
 {
 	private:

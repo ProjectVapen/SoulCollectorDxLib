@@ -1,5 +1,6 @@
 #pragma once
 #include "SceneBase.h"
+#include "Include.h"
 class SceneTitle:
 	public SceneBase
 {
@@ -9,5 +10,7 @@ class SceneTitle:
 	public:
 		SceneTitle();
 		~SceneTitle();
+
+		void Render()override;
 };
 

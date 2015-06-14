@@ -1,8 +1,7 @@
 #pragma once
 #include "Application.h"
 #include "Window.h"
-
-#include <memory>
+#include "Include.h"
 class Entry
 {
 	public:

@@ -1,7 +1,7 @@
 #pragma once
 #include "ManagementBattle.h"
 #include "ManagementScene.h"
-#include <memory>
+#include "Include.h"
 class AppManager
 {
 	public:

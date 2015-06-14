@@ -4,10 +4,13 @@
 #include "DataMedium.h"
 #include "DataPlayer.h"
 
-#include <memory>
+#include "Include.h"
 class AppData
 {
 	private:
+
+		bool m_upData;
+
 		std::unique_ptr<DataCard> m_pDataCard;
 		std::unique_ptr<DataCard> m_pDataEnemy;
 		std::unique_ptr<DataCard> m_pDataMedium;
@@ -15,6 +18,8 @@ class AppData
 
 	public:
 		AppData();
-		~AppData();
+		~AppData(); 
+		bool CanUpData();
+		void IsStopUpData(bool upData);
 };
 

@@ -23,10 +23,13 @@
     <ClInclude Include="DataEnemy.h" />
     <ClInclude Include="DataMedium.h" />
     <ClInclude Include="DataPlayer.h" />
+    <ClInclude Include="DataScene.h" />
     <ClInclude Include="Entry.h" />
+    <ClInclude Include="Include.h" />
     <ClInclude Include="ManagementBattle.h" />
     <ClInclude Include="ManagementScene.h" />
     <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SceneBattle.h" />
     <ClInclude Include="SceneStart.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="TypeAttributeBase.h" />
@@ -52,9 +55,11 @@
     <ClCompile Include="DataEnemy.cpp" />
     <ClCompile Include="DataMedium.cpp" />
     <ClCompile Include="DataPlayer.cpp" />
+    <ClCompile Include="DataScene.cpp" />
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="ManagementBattle.cpp" />
     <ClCompile Include="ManagementScene.cpp" />
+    <ClCompile Include="SceneBattle.cpp" />
     <ClCompile Include="SceneStart.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="TypeAttributeBase.cpp" />

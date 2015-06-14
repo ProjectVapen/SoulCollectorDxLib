@@ -15,6 +15,17 @@ Application::~Application()
 }
 
 void Application::AppMain(){
+	
+	if (m_pAppData->CanUpData()){
+		UpData();
+		m_pAppData->IsStopUpData(false);
+	}
+	
+
+}
 
 
+
+void Application::UpData(){
+	//	シーンを切り替えるとかなんかしらあった時の更新処理	//
 }
