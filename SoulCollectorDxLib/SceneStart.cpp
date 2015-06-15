@@ -1,15 +1,18 @@
 #include "SceneStart.h"
+#include "Entry.h"
+extern Entry entry;
 
-
-SceneStart::SceneStart()
-{
+SceneStart::SceneStart(){
+	m_backImage = LoadGraph("Asset/Start.png");
 }
 
 
-SceneStart::~SceneStart()
-{
+SceneStart::~SceneStart(){
+	DeleteGraph(m_backImage);
 }
 
 void SceneStart::Render(){
+	DrawExtendGraph(0, 0,
+		entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), m_backImage, FALSE);
 
 }

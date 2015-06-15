@@ -19,4 +19,5 @@ void SceneTitle::Render(){
 	DrawExtendGraph(0, 0,
 		entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), m_backImage, FALSE);
 
+
 }

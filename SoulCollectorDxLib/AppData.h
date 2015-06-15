@@ -17,15 +17,18 @@ class AppData
 
 		bool m_upData;
 
+		
+
+	public:
+		AppData();
+		~AppData();
+
 		std::unique_ptr<DataCard> m_pDataCard;
 		std::unique_ptr<DataCard> m_pDataEnemy;
 		std::unique_ptr<DataCard> m_pDataMedium;
 		std::unique_ptr<DataCard> m_pDataPlayer;
 
-	public:
-		AppData();
-		~AppData(); 
-		bool CanUpData();
-		void IsStopUpData(bool upData);
+		bool AppUpDataFlg();
+		void IsUpData(bool upData);
 };
 

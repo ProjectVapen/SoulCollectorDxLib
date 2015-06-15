@@ -12,13 +12,13 @@ class ManagementScene
 	private:
 
 		
-		std::unique_ptr<DataScene>m_pDataScene;
-		std::unique_ptr<SceneBase> m_pScene;
 	public:
 		ManagementScene();
 		~ManagementScene();
 
-		
+
+		std::unique_ptr<DataScene>m_pDataScene;
+		std::unique_ptr<SceneBase> m_pScene;
 
 		void ChangeScene();
 		void UpData();

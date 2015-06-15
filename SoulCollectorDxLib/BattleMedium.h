@@ -2,8 +2,8 @@
 #include "Include.h"
 class BattleMedium
 {
-public:
-	BattleMedium();
-	~BattleMedium();
+	public:
+		BattleMedium();
+		~BattleMedium();
 };
 

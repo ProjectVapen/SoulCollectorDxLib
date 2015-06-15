@@ -16,17 +16,15 @@ Application::~Application()
 
 void Application::AppMain(){
 
-	
+//	m_pController->m_PadInput();
 
-	if (m_pAppData->CanUpData()){
-		m_pAppManager->UpData();
-		m_pAppData->IsStopUpData(false);
+	if (m_pAppData->AppUpDataFlg()){
+		m_pAppManager->AppUpData();
+		m_pAppData->IsUpData(false);
 	}
 
-	m_pAppManager->Render();
-
+	m_pAppManager->AppRender();
+	m_pAppManager->AppProc();
 	frameRate.GetFrameRate();
 }
-
-
 

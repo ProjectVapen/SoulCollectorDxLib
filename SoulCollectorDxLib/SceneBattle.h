@@ -7,7 +7,7 @@ class SceneBattle :
 
 	private:
 		//‰æ‘œƒnƒ“ƒhƒ‹
-		int BackImage;
+		int m_backImage;
 	public:
 		SceneBattle();
 		~SceneBattle();

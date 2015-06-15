@@ -12,10 +12,10 @@ AppData::~AppData()
 }
 
 
-bool AppData::CanUpData(){
+bool AppData::AppUpDataFlg(){
 	return m_upData;
 }
 
-void AppData::IsStopUpData(bool upData){
+void AppData::IsUpData(bool upData){
 	m_upData = upData;
 }

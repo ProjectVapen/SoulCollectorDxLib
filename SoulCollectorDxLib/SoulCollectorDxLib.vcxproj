@@ -28,6 +28,8 @@
     <ClCompile Include="FrameRate.cpp" />
     <ClCompile Include="ManagementBattle.cpp" />
     <ClCompile Include="ManagementScene.cpp" />
+    <ClCompile Include="ManagementStart.cpp" />
+    <ClCompile Include="ManagementTitle.cpp" />
     <ClCompile Include="SceneBattle.cpp" />
     <ClCompile Include="SceneStart.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
@@ -60,6 +62,8 @@
     <ClInclude Include="Include.h" />
     <ClInclude Include="ManagementBattle.h" />
     <ClInclude Include="ManagementScene.h" />
+    <ClInclude Include="ManagementStart.h" />
+    <ClInclude Include="ManagementTitle.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBattle.h" />
     <ClInclude Include="SceneStart.h" />

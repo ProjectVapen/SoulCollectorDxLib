@@ -5,7 +5,7 @@
 
 ManagementScene::ManagementScene(){
 	m_pDataScene = std::make_unique<DataScene>();
-	m_pScene = std::make_unique<SceneTitle>();
+	m_pScene = nullptr;
 }
 
 

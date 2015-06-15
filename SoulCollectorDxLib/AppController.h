@@ -2,8 +2,8 @@
 #include "Include.h"
 class AppController
 {
-	private:
-		
+
+	public:
 		typedef enum _EGetController{
 			eNULL,
 			eUP,
@@ -24,12 +24,17 @@ class AppController
 			eBUTTON12
 		}eGetController;
 
+	private:
+		
 		int m_keyCount = 0;
 		JOYINFOEX m_joyInfoEx;
 		eGetController m_appGetKey;
+	
 	public:
 		AppController();
 		~AppController();
 		eGetController m_PadInput();
+
+		
 };
 
