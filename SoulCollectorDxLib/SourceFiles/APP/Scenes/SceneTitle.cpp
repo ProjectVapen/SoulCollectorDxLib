@@ -1,0 +1,22 @@
+#include "SceneTitle.h"
+#include "Entry.h"
+extern Entry entry;
+
+SceneTitle::SceneTitle() 
+{
+	m_backImage = LoadGraph("Asset/Title.png");
+}
+
+
+SceneTitle::~SceneTitle(){
+
+	DeleteGraph(m_backImage);
+
+}
+
+void SceneTitle::Render(){
+
+	DrawExtendGraph(0, 0,
+		entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), m_backImage, FALSE);
+
+}
