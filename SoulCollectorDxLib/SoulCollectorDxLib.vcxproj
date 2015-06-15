@@ -27,20 +27,14 @@
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="FrameRate.cpp" />
     <ClCompile Include="ManagementBattle.cpp" />
+    <ClCompile Include="ManagementEnemy.cpp" />
     <ClCompile Include="ManagementScene.cpp" />
     <ClCompile Include="ManagementStart.cpp" />
     <ClCompile Include="ManagementTitle.cpp" />
     <ClCompile Include="SceneBattle.cpp" />
+    <ClCompile Include="SceneResult.cpp" />
     <ClCompile Include="SceneStart.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
-    <ClCompile Include="TypeAttributeBase.cpp" />
-    <ClCompile Include="TypeAttributeFire.cpp" />
-    <ClCompile Include="TypeAttributeWater.cpp" />
-    <ClCompile Include="TypeAttributeWind.cpp" />
-    <ClCompile Include="TypeCardAttack.cpp" />
-    <ClCompile Include="TypeCardBase.cpp" />
-    <ClCompile Include="TypeCardDeffense.cpp" />
-    <ClCompile Include="TypeCardMagic.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -57,25 +51,20 @@
     <ClInclude Include="DataMedium.h" />
     <ClInclude Include="DataPlayer.h" />
     <ClInclude Include="DataScene.h" />
+    <ClInclude Include="EnemyBase.h" />
     <ClInclude Include="Entry.h" />
     <ClInclude Include="FrameRate.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="ManagementBattle.h" />
+    <ClInclude Include="ManagementEnemy.h" />
     <ClInclude Include="ManagementScene.h" />
     <ClInclude Include="ManagementStart.h" />
     <ClInclude Include="ManagementTitle.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBattle.h" />
+    <ClInclude Include="SceneResult.h" />
     <ClInclude Include="SceneStart.h" />
     <ClInclude Include="SceneTitle.h" />
-    <ClInclude Include="TypeAttributeBase.h" />
-    <ClInclude Include="TypeAttributeFire.h" />
-    <ClInclude Include="TypeAttributeWater.h" />
-    <ClInclude Include="TypeAttributeWind.h" />
-    <ClInclude Include="TypeCardAttack.h" />
-    <ClInclude Include="TypeCardBase.h" />
-    <ClInclude Include="TypeCardDeffense.h" />
-    <ClInclude Include="TypeCardMagic.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

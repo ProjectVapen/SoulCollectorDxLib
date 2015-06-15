@@ -14,5 +14,5 @@ SceneStart::~SceneStart(){
 void SceneStart::Render(){
 	DrawExtendGraph(0, 0,
 		entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), m_backImage, FALSE);
-
+	DrawFormatString(0, 10, GetColor(255, 255, 255), "スタート画面");
 }
