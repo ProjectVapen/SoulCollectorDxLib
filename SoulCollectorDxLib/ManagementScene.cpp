@@ -14,34 +14,78 @@ ManagementScene::~ManagementScene()
 	
 }
 
+void ManagementScene::UpData(){
+
+	this->ChangeScene();
+	switch (this->NowScene()){
+		
+	case DataScene::eScene::eTITLE:
+		this->m_pScene = std::make_unique<SceneTitle>();
+
+		NextScene(DataScene::eScene::eSTART);
+		break;
+	case DataScene::eScene::eSTART:
+		this->m_pScene = std::make_unique<SceneStart>();
+
+		NextScene(DataScene::eScene::eBATTLE);
+		break;
+
+	case DataScene::eScene::eBATTLE:
+		this->m_pScene = std::make_unique<SceneBattle>();
+		
+		NextScene(DataScene::eScene::eRESULT);
+		break;
+
+	case DataScene::eScene::eRESULT:
+		this->m_pScene = nullptr;
+
+		NextScene(DataScene::eScene::eSTART);
+		break;
+
+	case DataScene::eScene::eNULL:
+		this->m_pScene = nullptr;
+		NextScene(DataScene::eScene::eTITLE);
+		break;
+
+
+	}
+}
 
 void ManagementScene::ChangeScene(){
 
 
 	switch (m_pDataScene->NextScene())
 	{
-	case DataScene::eScene::eTitle:
-		m_pDataScene->PrevScene(DataScene::eScene::eNone);
-		m_pDataScene->NowScene(DataScene::eScene::eTitle);
-		m_pDataScene->NextScene(DataScene::eScene::eStart);
+	case DataScene::eScene::eTITLE:
+
+		m_pDataScene->PrevScene(DataScene::eScene::eNULL);
+		m_pDataScene->NowScene(DataScene::eScene::eTITLE);
+		m_pDataScene->NextScene(DataScene::eScene::eSTART);
+
 		break;
 
-	case DataScene::eScene::eStart:
-		m_pDataScene->PrevScene(DataScene::eScene::eTitle);
-		m_pDataScene->NowScene(DataScene::eScene::eStart);
-		m_pDataScene->NextScene(DataScene::eScene::eBattle);
+	case DataScene::eScene::eSTART:
+
+		m_pDataScene->PrevScene(DataScene::eScene::eTITLE);
+		m_pDataScene->NowScene(DataScene::eScene::eSTART);
+		m_pDataScene->NextScene(DataScene::eScene::eBATTLE);
+
 		break;
 
-	case DataScene::eScene::eBattle:
-		m_pDataScene->PrevScene(DataScene::eScene::eStart);
-		m_pDataScene->NowScene(DataScene::eScene::eBattle);
-		m_pDataScene->NextScene(DataScene::eScene::eResult);
+	case DataScene::eScene::eBATTLE:
+
+		m_pDataScene->PrevScene(DataScene::eScene::eSTART);
+		m_pDataScene->NowScene(DataScene::eScene::eBATTLE);
+		m_pDataScene->NextScene(DataScene::eScene::eRESULT);
+
 		break;
 
-	case DataScene::eScene::eResult:
-		m_pDataScene->PrevScene(DataScene::eScene::eBattle);
-		m_pDataScene->NowScene(DataScene::eScene::eResult);
-		m_pDataScene->NextScene(DataScene::eScene::eStart);
+	case DataScene::eScene::eRESULT:
+
+		m_pDataScene->PrevScene(DataScene::eScene::eBATTLE);
+		m_pDataScene->NowScene(DataScene::eScene::eRESULT);
+		m_pDataScene->NextScene(DataScene::eScene::eSTART);
+
 		break;
 
 
@@ -54,4 +98,8 @@ DataScene::eScene ManagementScene::NowScene(){
 
 void ManagementScene::NextScene(DataScene::eScene nextScene){
 	 m_pDataScene->NextScene(nextScene);
+}
+
+void ManagementScene::Render(){
+	m_pScene->Render();
 }

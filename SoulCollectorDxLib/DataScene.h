@@ -17,12 +17,12 @@ class DataScene
 	public:
 
 		typedef enum _EScene{
-			eTitle,
-			eStart,
-			eBattle,
-			eResult,
+			eTITLE,
+			eSTART,
+			eBATTLE,
+			eRESULT,
 
-			eNone
+			eNULL
 		}eScene;
 
 		DataScene();

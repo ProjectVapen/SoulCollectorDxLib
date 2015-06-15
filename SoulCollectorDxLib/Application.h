@@ -8,9 +8,6 @@
 class Application
 {
 	private:
-
-
-
 		std::unique_ptr<AppManager> m_pAppManager;
 		std::unique_ptr<AppData>	m_pAppData;
 		std::unique_ptr<AppController>m_pController;

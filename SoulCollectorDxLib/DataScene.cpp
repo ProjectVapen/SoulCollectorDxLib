@@ -1,16 +1,14 @@
 #include "DataScene.h"
 
 
-DataScene::DataScene()
-{
-	NowScene(eNone);
-	PrevScene(eNone);
-	NextScene(eTitle);
+DataScene::DataScene(){
+
+	NowScene(eNULL);
+	PrevScene(eNULL);
+	NextScene(eTITLE);
+
 }
-
-
-DataScene::~DataScene()
-{
+DataScene::~DataScene(){
 }
 
 DataScene::eScene DataScene::PrevScene(){
