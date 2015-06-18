@@ -20,31 +20,35 @@ void ManagementScene::UpData(){
 	switch (this->NowScene()){
 		
 	case DataScene::eScene::eTITLE:
+		m_pDataScene->PrevScene(DataScene::eScene::eTITLE);
+
 		this->m_pScene = std::make_unique<SceneTitle>();
 
-		NextScene(DataScene::eScene::eSTART);
 		break;
 	case DataScene::eScene::eSTART:
+		m_pDataScene->PrevScene(DataScene::eScene::eSTART);
+
 		this->m_pScene = std::make_unique<SceneStart>();
 
-		NextScene(DataScene::eScene::eBATTLE);
 		break;
 
 	case DataScene::eScene::eBATTLE:
+		m_pDataScene->PrevScene(DataScene::eScene::eBATTLE);
+
 		this->m_pScene = std::make_unique<SceneBattle>();
 		
-		NextScene(DataScene::eScene::eRESULT);
 		break;
-
+	
 	case DataScene::eScene::eRESULT:
+		m_pDataScene->PrevScene(DataScene::eScene::eRESULT);
+
 		this->m_pScene = nullptr;
 
-		NextScene(DataScene::eScene::eSTART);
 		break;
 
 	case DataScene::eScene::eNULL:
 		this->m_pScene = nullptr;
-		NextScene(DataScene::eScene::eTITLE);
+
 		break;
 
 
@@ -58,7 +62,6 @@ void ManagementScene::ChangeScene(){
 	{
 	case DataScene::eScene::eTITLE:
 
-		m_pDataScene->PrevScene(DataScene::eScene::eNULL);
 		m_pDataScene->NowScene(DataScene::eScene::eTITLE);
 		m_pDataScene->NextScene(DataScene::eScene::eSTART);
 
@@ -66,23 +69,19 @@ void ManagementScene::ChangeScene(){
 
 	case DataScene::eScene::eSTART:
 
-		m_pDataScene->PrevScene(DataScene::eScene::eTITLE);
 		m_pDataScene->NowScene(DataScene::eScene::eSTART);
 		m_pDataScene->NextScene(DataScene::eScene::eBATTLE);
 
 		break;
 
 	case DataScene::eScene::eBATTLE:
-
-		m_pDataScene->PrevScene(DataScene::eScene::eSTART);
 		m_pDataScene->NowScene(DataScene::eScene::eBATTLE);
-		m_pDataScene->NextScene(DataScene::eScene::eRESULT);
+		m_pDataScene->NextScene(DataScene::eScene::eTITLE);
 
 		break;
 
 	case DataScene::eScene::eRESULT:
 
-		m_pDataScene->PrevScene(DataScene::eScene::eBATTLE);
 		m_pDataScene->NowScene(DataScene::eScene::eRESULT);
 		m_pDataScene->NextScene(DataScene::eScene::eSTART);
 

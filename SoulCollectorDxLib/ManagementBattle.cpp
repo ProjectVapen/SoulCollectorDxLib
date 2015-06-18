@@ -1,5 +1,6 @@
 #include "ManagementBattle.h"
-
+#include "Entry.h"
+extern Entry entry;
 
 ManagementBattle::ManagementBattle(){
 
@@ -13,4 +14,14 @@ ManagementBattle::ManagementBattle(){
 
 
 ManagementBattle::~ManagementBattle(){
+}
+
+void ManagementBattle::PushKeyState(AppController::eGetController pushKey){
+	//コントローラー入力処理を記述
+
+}
+
+void ManagementBattle::PushKeyState(){
+	WaitKey();
+	entry.m_pApp->m_pAppData->IsUpData(true);
 }

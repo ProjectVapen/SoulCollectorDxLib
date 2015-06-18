@@ -3,7 +3,7 @@
 extern Entry entry;
 
 SceneStart::SceneStart(){
-	m_backImage = LoadGraph("Asset/Start.png");
+	m_backImage = LoadGraph("Asset/Scenes/Start.png");
 }
 
 

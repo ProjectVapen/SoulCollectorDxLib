@@ -10,8 +10,12 @@ ManagementStart::~ManagementStart()
 {
 }
 
-void ManagementStart::Proc(AppController::eGetController pushKey){
+void ManagementStart::PushKeyState(AppController::eGetController pushKey){
 	//コントローラー入力処理を記述
+	
+}
+
+void ManagementStart::PushKeyState(){
 	WaitKey();
 	entry.m_pApp->m_pAppData->IsUpData(true);
 }

@@ -52,15 +52,18 @@ void AppManager::AppProc(){
 	switch(m_pManagScene->NowScene()){
 
 	case DataScene::eScene::eTITLE:
-		m_pManagTitle->Proc(entry.m_pApp->m_pController->m_PadInput());
+		//m_pManagTitle->PushKeyState(entry.m_pApp->m_pController->m_PadInput());
+		m_pManagTitle->PushKeyState();
 		break;
 
 	case DataScene::eScene::eSTART:
-		m_pManagStart->Proc(entry.m_pApp->m_pController->m_PadInput());
+		//m_pManagStart->PushKeyState(entry.m_pApp->m_pController->m_PadInput());
+		m_pManagStart->PushKeyState();
 		break;
 
 	case DataScene::eScene::eBATTLE:
 		m_pManageBattle = std::make_unique<ManagementBattle>();
+		m_pManagStart->PushKeyState();
 		break;
 
 	case DataScene::eScene::eRESULT:

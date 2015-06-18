@@ -10,8 +10,7 @@
 #include "DxLib.h"
 
 /*	STL系	*/
-#include <memory>	//スマートポインタを使うときに必要。大体の奴に使う
-
-
-
+#include <memory>	//スマートポインタを使うときに必要。
+#include <vector>	//vectorコンテナ使用時に必要。
+#include <string>	//文字列使うとき必要
 

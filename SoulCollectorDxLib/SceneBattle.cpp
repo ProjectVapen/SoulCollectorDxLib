@@ -3,7 +3,7 @@
 extern Entry entry;
 
 SceneBattle::SceneBattle(){
-	m_backImage = LoadGraph("Asset/Battle.png");
+	m_backImage = LoadGraph("Asset/Scenes/Battle.png");
 }
 
 

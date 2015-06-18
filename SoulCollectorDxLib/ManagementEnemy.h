@@ -1,8 +1,11 @@
 #pragma once
-class ManagementEnemy
-{
-public:
-	ManagementEnemy();
-	~ManagementEnemy();
+
+class ManagementEnemy{
+
+	private:
+		
+	public:
+		ManagementEnemy();
+		~ManagementEnemy();
 };
 

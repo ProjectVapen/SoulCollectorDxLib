@@ -6,6 +6,8 @@ class ManagementTitle
 		ManagementTitle();
 		~ManagementTitle();
 
-		void Proc(AppController::eGetController);
+		void PushKeyState(AppController::eGetController);
+
+		void PushKeyState();
 };
 

@@ -4,7 +4,7 @@ extern Entry entry;
 
 SceneTitle::SceneTitle() 
 {
-	m_backImage = LoadGraph("Asset/Title.png");
+	m_backImage = LoadGraph("Asset/Scenes/Title.png");
 }
 
 

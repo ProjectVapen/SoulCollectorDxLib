@@ -1,10 +1,17 @@
 #pragma once
+/*
+	í“¬ŠÇ—ƒNƒ‰ƒX
+
+
+
+*/
 #include "BattleCard.h"
 #include "BattleEnemy.h"
 #include "BattleMedium.h"
 #include "BattlePlayer.h"
 
 #include "Include.h"
+#include "AppController.h"
 class ManagementBattle
 {
 	private:
@@ -16,5 +23,11 @@ class ManagementBattle
 	public:
 		ManagementBattle();
 		~ManagementBattle();
+
+		void PushKeyState(AppController::eGetController pushKey);
+
+		void PushKeyState();
+
+
 };
 

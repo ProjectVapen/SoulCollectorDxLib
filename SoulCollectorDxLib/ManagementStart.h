@@ -6,7 +6,8 @@ class ManagementStart
 		ManagementStart();
 		~ManagementStart();
 
-		void ManagementStart::Proc(AppController::eGetController pushKey);
+		void PushKeyState(AppController::eGetController pushKey);
 
+		void PushKeyState();
 };
 
