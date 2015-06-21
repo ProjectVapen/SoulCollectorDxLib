@@ -3,14 +3,10 @@
 class EnemyDragon :
 	public EnemyBase
 {
-
-	private:
-		int m_image;
-
 	public:
 		EnemyDragon();
 		~EnemyDragon();
 
-		int GetImage()override;
+		void Render()override;
 };
 

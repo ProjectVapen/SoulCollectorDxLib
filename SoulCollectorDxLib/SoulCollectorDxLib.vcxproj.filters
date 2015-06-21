@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="ソース ファイル\AppMain">
       <UniqueIdentifier>{aab47e18-33dd-4cc9-b3cf-0350d4e62d5e}</UniqueIdentifier>
     </Filter>
@@ -48,6 +44,10 @@
     </Filter>
     <Filter Include="ソース ファイル\AppBattle">
       <UniqueIdentifier>{df2e3c7f-bcee-4192-92f0-4d50c35336a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -126,41 +126,8 @@
     <ClCompile Include="ManagementTitle.cpp">
       <Filter>ソース ファイル\AppManagement</Filter>
     </ClCompile>
-    <ClCompile Include="EnemyBase.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemySlime.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyDragon.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyBigShield.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyEvilFlame.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyShytarn.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyOrthors.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyUndine.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyDoriard.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyZombieKnight.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyDryad.cpp">
+    <ClCompile Include="Enemy.cpp">
       <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemyGoblinWarrior.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -230,9 +197,6 @@
     <ClInclude Include="Include.h">
       <Filter>ヘッダー ファイル\AppMain</Filter>
     </ClInclude>
-    <ClInclude Include="EnemyBase.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
     <ClInclude Include="SceneBase.h">
       <Filter>ヘッダー ファイル\AppScenes</Filter>
     </ClInclude>
@@ -248,38 +212,8 @@
     <ClInclude Include="SceneTitle.h">
       <Filter>ヘッダー ファイル\AppScenes</Filter>
     </ClInclude>
-    <ClInclude Include="EnemySlime.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyBigShield.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyDoriard.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyDragon.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyEvilFlame.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyOrthors.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyShytarn.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyUndine.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyZombieKnight.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyDryad.h">
+    <ClInclude Include="Enemy.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyGoblinWarrior.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

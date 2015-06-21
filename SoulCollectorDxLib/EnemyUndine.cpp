@@ -10,6 +10,7 @@ EnemyUndine::~EnemyUndine(){
 	DeleteGraph(m_image);
 }
 
-int EnemyUndine::GetImage(){
-	return this->m_image;
+void EnemyUndine::Render(){
+	DrawExtendGraph(0, 0,
+		1280, 720, m_image, FALSE);
 }

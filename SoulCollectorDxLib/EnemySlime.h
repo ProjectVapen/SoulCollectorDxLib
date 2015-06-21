@@ -3,13 +3,12 @@
 class EnemySlime :
 	public EnemyBase
 {
-	private:
-		int m_image;
+
 
 	public:
 		EnemySlime();
 		~EnemySlime();
 
-		int GetImage()override;
+		void Render()override;
 };
 

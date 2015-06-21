@@ -5,12 +5,12 @@ class EnemyShytarn :
 {
 
 	private:
-		int m_image;
+
 	
 	public:
 		EnemyShytarn();
 		~EnemyShytarn();
 
-		int GetImage()override;
+		void Render()override;
 };
 

@@ -63,7 +63,9 @@ void AppManager::AppProc(){
 
 	case DataScene::eScene::eBATTLE:
 		m_pManageBattle = std::make_unique<ManagementBattle>();
-		m_pManagStart->PushKeyState();
+		m_pManageBattle->Draw();
+		m_pManageBattle->PushKeyState();
+		
 		break;
 
 	case DataScene::eScene::eRESULT:

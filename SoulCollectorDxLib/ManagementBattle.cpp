@@ -9,7 +9,7 @@ ManagementBattle::ManagementBattle(){
 	m_pBattleMedium = std::make_unique<BattleMedium>();
 	m_pBattlePlayer = std::make_unique<BattlePlayer>();
 
-
+	
 }
 
 
@@ -22,6 +22,12 @@ void ManagementBattle::PushKeyState(AppController::eGetController pushKey){
 }
 
 void ManagementBattle::PushKeyState(){
+	
 	WaitKey();
 	entry.m_pApp->m_pAppData->IsUpData(true);
+	
+}
+
+void ManagementBattle::Draw(){
+	m_pBattleEnemy->Draw();
 }

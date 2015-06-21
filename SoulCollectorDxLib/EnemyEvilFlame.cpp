@@ -10,6 +10,7 @@ EnemyEvilFlame::~EnemyEvilFlame(){
 	DeleteGraph(m_image);
 }
 
-int EnemyEvilFlame::GetImage(){
-	return this->m_image;
+void EnemyEvilFlame::Render(){
+	DrawExtendGraph(0, 0,
+		1280, 720, m_image, FALSE);
 }

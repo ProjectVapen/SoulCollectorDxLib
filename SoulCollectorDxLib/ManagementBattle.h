@@ -28,6 +28,6 @@ class ManagementBattle
 
 		void PushKeyState();
 
-
+		void Draw();
 };
 

@@ -10,6 +10,7 @@ EnemyShytarn::~EnemyShytarn(){
 	DeleteGraph(m_image);
 }
 
-int EnemyShytarn::GetImage(){
-	return this->m_image;
+void EnemyShytarn::Render(){
+	DrawExtendGraph(0, 0,
+		1280, 720, m_image, FALSE);
 }

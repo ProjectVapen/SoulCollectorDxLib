@@ -5,11 +5,11 @@ class EnemyUndine :
 {
 
 	private:
-		int m_image;
+
 
 	public:
 		EnemyUndine();
 		~EnemyUndine();
 	
-		int GetImage()override;
+		void Render()override;
 };

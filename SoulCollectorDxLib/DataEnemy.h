@@ -1,6 +1,7 @@
 #pragma once
 #include "Include.h"
-
+#include "Enemy.h"
+/*
 #include "EnemyBase.h"
 #include "EnemyBigShield.h"
 #include "EnemyDoriard.h"
@@ -13,6 +14,7 @@
 #include "EnemySlime.h"
 #include "EnemyUndine.h"
 #include "EnemyZombieKnight.h"
+*/
 class DataEnemy
 {
 
@@ -28,7 +30,8 @@ class DataEnemy
 			int m_sATK;
 			int m_sDEF;
 			int m_sSPD;
-		}sEnemyData;
+			std::string m_sImagePath;
+		}sEnemyData; 
 
 
 		std::vector<sEnemyData>m_enemyAllData;
@@ -40,22 +43,34 @@ class DataEnemy
 		int m_loadCnt;
 
 		int m_joinBattleEnemys;	//戦闘に出てくる敵の数（ランダム値）
-		int m_pickUpEnemy;		//何が出てくるか（ランダム値）
-				
+		int m_pushNumber;		//何が出てくるか（ランダム値）
+
 		int const m_MAX_JOIN_ENEMYS; //	戦闘に出てくる最大数
 		int const m_ALL_ENEMYS;		//そこに出てくる種類の上限
 
 	public:
+		DataEnemy();
+
 		DataEnemy(std::string filePath);
 		~DataEnemy();
 
 		bool ReadCsvData(std::string filePath);
 
-		int RandomJoinBattle();
-		int RandomPickUpEnemy();
+		int GetJoinBattle()const;
+		void RandomJoinBattle();
+		void RandomPickUpEnemy();
 
-		std::unique_ptr<EnemyBase> SetEnemy();
+		//std::unique_ptr<Enemy> SetEnemy();
+		std::string GetEnemyName();
+		int GetEnemyID();
+		int GetEnemyAttribute();
 
-		int GetJoinBattle();
+		int GetEnemyHP();
+		int GetEnemyATK();
+		int GetEnemyDEF();
+		int GetEnemySPD();
+		
+		std::string GetEnemyImagePath()const;
+		
 };
 

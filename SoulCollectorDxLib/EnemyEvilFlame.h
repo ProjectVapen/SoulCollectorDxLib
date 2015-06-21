@@ -3,13 +3,10 @@
 class EnemyEvilFlame :
 	public EnemyBase
 {
-	private:
-		int m_image;
-
 	public:
 		EnemyEvilFlame();
 		~EnemyEvilFlame();
 
-		int GetImage()override;
+		void Render()override;
 };
 

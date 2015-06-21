@@ -10,6 +10,7 @@ EnemySlime::~EnemySlime(){
 	DeleteGraph(m_image);
 }
 
-int EnemySlime::GetImage(){
-	return this->m_image;
+void EnemySlime::Render(){
+	DrawExtendGraph(0, 0,
+		1280, 720, m_image, FALSE);
 }

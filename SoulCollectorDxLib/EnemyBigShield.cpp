@@ -12,6 +12,7 @@ EnemyBigShield::~EnemyBigShield(){
 	DeleteGraph(m_image);
 }
 
-int EnemyBigShield::GetImage(){
-	return this->m_image;
+void EnemyBigShield::Render(){
+	DrawExtendGraph(0, 0,
+		1280, 720, m_image, FALSE);
 }
