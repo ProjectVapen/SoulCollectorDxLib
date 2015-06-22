@@ -1,6 +1,6 @@
 #include "ManagementTitle.h"
-#include "Entry.h"
-extern Entry entry;
+#include "Application.h"
+extern std::unique_ptr<Application> pApp;
 
 ManagementTitle::ManagementTitle()
 {
@@ -19,5 +19,5 @@ void ManagementTitle::PushKeyState(AppController::eGetController pushKey){
 void ManagementTitle::PushKeyState(){
 	
 	WaitKey();
-	entry.m_pApp->m_pAppData->IsUpData(true);
+	pApp->m_pAppData->IsUpData(true);
 }

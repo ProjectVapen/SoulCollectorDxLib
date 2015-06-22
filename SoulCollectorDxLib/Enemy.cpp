@@ -1,6 +1,17 @@
 #include "Enemy.h"
 
-Enemy::Enemy(){}
+Enemy::Enemy(){
+	std::string m_name = "NULL";
+	int m_id		= NULL;
+	int m_attribute = NULL;
+
+	int m_hp		= NULL;
+	int m_atk		= NULL;
+	int m_def		= NULL;
+	int m_spd		= NULL;
+
+	std::string m_enemyImagePath = "NULL";
+}
 
 Enemy::~Enemy(){
 

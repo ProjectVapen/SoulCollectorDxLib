@@ -1,6 +1,6 @@
 #include "ManagementBattle.h"
-#include "Entry.h"
-extern Entry entry;
+#include "Application.h"
+extern std::unique_ptr<Application> pApp;
 
 ManagementBattle::ManagementBattle(){
 
@@ -24,10 +24,39 @@ void ManagementBattle::PushKeyState(AppController::eGetController pushKey){
 void ManagementBattle::PushKeyState(){
 	
 	WaitKey();
-	entry.m_pApp->m_pAppData->IsUpData(true);
-	
+	pApp->m_pAppData->IsUpData(true);
+
 }
 
-void ManagementBattle::Draw(){
-	m_pBattleEnemy->Draw();
+void ManagementBattle::Render(){
+	m_pBattleEnemy->Render();
 }
+
+void ManagementBattle::Proc(){
+
+	if (m_pBattleEnemy->EnemyBrain())
+	{
+		//敵の思考終了後
+		//プレイヤーの選択スタート
+		
+		IsSelectEnd(true);
+
+	}
+
+	if (IsSelectEnd())
+	{
+		//早い順に攻撃
+		//ダメージ計算とかの処理
+		//ダメージを反映
+	}
+
+}
+
+bool ManagementBattle::IsSelectEnd(){
+	return m_isSelect;
+}
+
+void ManagementBattle::IsSelectEnd(bool selectFlg){
+	m_isSelect = selectFlg;
+}
+

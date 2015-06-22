@@ -114,12 +114,6 @@
     <ClCompile Include="ManagementBattle.cpp">
       <Filter>ソース ファイル\AppManagement</Filter>
     </ClCompile>
-    <ClCompile Include="ManagementEnemy.cpp">
-      <Filter>ソース ファイル\AppManagement</Filter>
-    </ClCompile>
-    <ClCompile Include="ManagementScene.cpp">
-      <Filter>ソース ファイル\AppManagement</Filter>
-    </ClCompile>
     <ClCompile Include="ManagementStart.cpp">
       <Filter>ソース ファイル\AppManagement</Filter>
     </ClCompile>
@@ -127,7 +121,10 @@
       <Filter>ソース ファイル\AppManagement</Filter>
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\AppEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ソース ファイル\AppManagement</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,12 +176,6 @@
     <ClInclude Include="ManagementBattle.h">
       <Filter>ヘッダー ファイル\AppManagement</Filter>
     </ClInclude>
-    <ClInclude Include="ManagementEnemy.h">
-      <Filter>ヘッダー ファイル\AppManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="ManagementScene.h">
-      <Filter>ヘッダー ファイル\AppManagement</Filter>
-    </ClInclude>
     <ClInclude Include="ManagementStart.h">
       <Filter>ヘッダー ファイル\AppManagement</Filter>
     </ClInclude>
@@ -213,7 +204,10 @@
       <Filter>ヘッダー ファイル\AppScenes</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\AppEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ヘッダー ファイル\AppManagement</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

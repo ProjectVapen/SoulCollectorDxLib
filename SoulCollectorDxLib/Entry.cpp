@@ -1,6 +1,6 @@
 #include "Entry.h"
 #include "DxLib.h"
-
+#include "Application.h"
 Entry::Entry()
 {
 }
@@ -10,19 +10,19 @@ Entry::~Entry()
 {
 }
 
-Entry entry;
+//ゲームのインスタンス化
+std::unique_ptr<Application> pApp = std::make_unique<Application>();
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	LPSTR lpCmdLine, int nCmdShow)
 {
-
-	entry.m_pWindow = std::make_unique<Window>(1280,720);
-	entry.m_pApp = std::make_unique<Application>();
+	Entry entry;
+	
 
 	
 	
 	ChangeWindowMode(TRUE),	
-	SetGraphMode(entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), 32);	
+	SetGraphMode(pApp->m_pWindow->GetWindowWidth(), pApp->m_pWindow->GetWidowHeight(), 32);	
 	SetDrawScreen(DX_SCREEN_BACK);
 
 	if (DxLib_Init() == -1)    // ＤＸライブラリ初期化処理
@@ -32,7 +32,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	while (ScreenFlip() == 0 && ProcessMessage() == 0 &&
 		ClearDrawScreen() == 0)
 	{
-		entry.m_pApp->AppMain();
+		pApp->AppMain();
 	}
 
 

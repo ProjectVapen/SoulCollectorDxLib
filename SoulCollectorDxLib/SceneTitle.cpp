@@ -1,6 +1,6 @@
 #include "SceneTitle.h"
-#include "Entry.h"
-extern Entry entry;
+#include "Application.h"
+extern std::unique_ptr<Application> pApp;
 
 SceneTitle::SceneTitle() 
 {
@@ -17,7 +17,7 @@ SceneTitle::~SceneTitle(){
 void SceneTitle::Render(){
 
 	DrawExtendGraph(0, 0,
-		entry.m_pWindow->GetWindowWidth(), entry.m_pWindow->GetWidowHeight(), m_backImage, FALSE);
+		pApp->m_pWindow->GetWindowWidth(), pApp->m_pWindow->GetWidowHeight(), m_backImage, FALSE);
 
 	DrawFormatString(0, 10, GetColor(255, 255, 255), "ƒ^ƒCƒgƒ‹‰æ–Ê");
 }

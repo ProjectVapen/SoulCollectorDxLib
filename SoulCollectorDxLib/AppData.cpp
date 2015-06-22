@@ -4,6 +4,7 @@
 AppData::AppData()
 {
 	m_upData = true;
+	m_saveEnemyListPath = "NULL";
 }
 
 
@@ -18,4 +19,11 @@ bool AppData::AppUpDataFlg(){
 
 void AppData::IsUpData(bool upData){
 	m_upData = upData;
+}
+
+void AppData::EnemyListFilePath(std::string enemyFilePath){
+	m_saveEnemyListPath = enemyFilePath;
+}
+std::string  AppData::EnemyListFilePath(){
+	return this->m_saveEnemyListPath;
 }

@@ -1,6 +1,6 @@
 #include "ManagementStart.h"
-#include "Entry.h"
-extern Entry entry;
+#include "Application.h"
+extern std::unique_ptr<Application> pApp;
 ManagementStart::ManagementStart()
 {
 }
@@ -17,5 +17,5 @@ void ManagementStart::PushKeyState(AppController::eGetController pushKey){
 
 void ManagementStart::PushKeyState(){
 	WaitKey();
-	entry.m_pApp->m_pAppData->IsUpData(true);
+	pApp->m_pAppData->IsUpData(true);
 }

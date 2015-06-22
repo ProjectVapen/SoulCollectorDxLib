@@ -1,8 +1,8 @@
 #pragma once
 /*
+	
 	ゲーム全体のデータクラス
-
-
+	ゲーム中に保存しときたいのを保存する
 
 */
 #include "DataCard.h"
@@ -11,24 +11,23 @@
 #include "DataPlayer.h"
 
 #include "Include.h"
-class AppData
-{
+class AppData{
+
 	private:
 
 		bool m_upData;
 
-		
+		std::string m_saveEnemyListPath;
 
 	public:
+		
 		AppData();
 		~AppData();
-
-		std::unique_ptr<DataCard> m_pDataCard;
-		std::unique_ptr<DataCard> m_pDataEnemy;
-		std::unique_ptr<DataCard> m_pDataMedium;
-		std::unique_ptr<DataCard> m_pDataPlayer;
-
 		bool AppUpDataFlg();
 		void IsUpData(bool upData);
+
+		void EnemyListFilePath(std::string);
+		std::string  EnemyListFilePath();
+
 };
 

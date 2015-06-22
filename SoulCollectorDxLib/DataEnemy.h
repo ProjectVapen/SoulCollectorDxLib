@@ -1,27 +1,14 @@
 #pragma once
 #include "Include.h"
 #include "Enemy.h"
-/*
-#include "EnemyBase.h"
-#include "EnemyBigShield.h"
-#include "EnemyDoriard.h"
-#include "EnemyDragon.h"
-#include "EnemyDryad.h"
-#include "EnemyEvilFlame.h"
-#include "EnemyGoblinWarrior.h"
-#include "EnemyOrthors.h"
-#include "EnemyShytarn.h"
-#include "EnemySlime.h"
-#include "EnemyUndine.h"
-#include "EnemyZombieKnight.h"
-*/
+
 class DataEnemy
 {
 
 	private:
 			
 		
-
+		
 		typedef struct _SEnemyData{
 			std::string m_sName;
 			int m_sID;
@@ -32,7 +19,7 @@ class DataEnemy
 			int m_sSPD;
 			std::string m_sImagePath;
 		}sEnemyData; 
-
+		
 
 		std::vector<sEnemyData>m_enemyAllData;
 

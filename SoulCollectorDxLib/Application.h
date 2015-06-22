@@ -8,7 +8,7 @@
 #include "AppManager.h"
 #include "AppData.h"
 #include "AppController.h"
-
+#include "Window.h"
 #include "Include.h"
 
 class Application
@@ -17,6 +17,7 @@ class Application
 		
 	public:
 
+		std::unique_ptr<Window> m_pWindow;
 		std::unique_ptr<AppManager> m_pAppManager;
 		std::unique_ptr<AppData>	m_pAppData;
 		std::unique_ptr<AppController>m_pController;

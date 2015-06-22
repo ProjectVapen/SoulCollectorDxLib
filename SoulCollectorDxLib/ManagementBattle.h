@@ -15,12 +15,16 @@
 class ManagementBattle
 {
 	private:
+		
 		std::unique_ptr<BattleCard> m_pBattleCard;
 		std::unique_ptr<BattleEnemy> m_pBattleEnemy;
 		std::unique_ptr<BattleMedium> m_pBattleMedium;
 		std::unique_ptr<BattlePlayer> m_pBattlePlayer;
 
+		bool m_isSelect;
+
 	public:
+
 		ManagementBattle();
 		~ManagementBattle();
 
@@ -28,6 +32,11 @@ class ManagementBattle
 
 		void PushKeyState();
 
-		void Draw();
+		void Proc();
+		void Render();
+
+		bool IsSelectEnd();
+		void IsSelectEnd(bool);
+		
 };
 

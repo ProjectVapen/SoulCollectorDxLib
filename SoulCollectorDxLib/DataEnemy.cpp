@@ -5,11 +5,12 @@
 #include <time.h>
 #include <math.h>
 #include <iostream>
+
 #include "Enemy.h"
 #include "DataEnemy.h"
-#include "Entry.h"
 
-extern Entry entry;
+#include "Application.h"
+extern std::unique_ptr<Application> pApp;
 
 DataEnemy::DataEnemy():
 m_MAX_JOIN_ENEMYS(5),
@@ -27,9 +28,12 @@ m_ALL_ENEMYS(10){
 	m_pushNumber = 0;
 
 	RandomJoinBattle();
-	m_filePath = filePath;
 
-	ReadCsvData(m_filePath);
+		if (ReadCsvData(filePath))
+		{
+
+		}	
+	
 }
 
 
@@ -39,7 +43,11 @@ DataEnemy::~DataEnemy()
 
 
 
+
+
 bool DataEnemy::ReadCsvData(std::string filePath){
+
+	
 
 	std::ifstream file;
 	std::vector<std::string>data;

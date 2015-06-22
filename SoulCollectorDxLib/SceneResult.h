@@ -1,5 +1,6 @@
 #pragma once
 #include "SceneBase.h"
+#include "Include.h"
 class SceneResult:
 	public SceneBase
 {
