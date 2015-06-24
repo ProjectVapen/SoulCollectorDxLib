@@ -1,9 +1,9 @@
 #pragma once
 /*
 	SceneBase
-	シーン描画クラス
+	
+	背景描画クラス
 	抽象クラス
-
 
 */
 class SceneBase

@@ -1,6 +1,8 @@
 #pragma once
 /*
-	シーン管理クラス
+	ManagementScene
+
+	全シーン管理クラス
 */
 
 
@@ -46,15 +48,19 @@ class ManagementScene
 		//検索して取得
 		static std::shared_ptr<ManagementBase> Find(const std::string& name);
 
+		//初期化
 		void Init();
-	
+		
+		//前の状態を削除
 		void PrevDelete();
 
 		typedef enum class _EState{
+
 			eInit,
 			eUpData,
 			ePrevDelete,
 			eFadeOut
+
 		}eState;
 
 		static eState m_stateScene;

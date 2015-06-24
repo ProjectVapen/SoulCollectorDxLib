@@ -1,4 +1,9 @@
 #pragma once
+/*
+	ManagementStart
+
+	スタート画面管理クラス
+*/
 #include "AppController.h"
 #include "ManagementBase.h"
 class ManagementStart:public ManagementBase

@@ -1,6 +1,9 @@
 #pragma once
 /*
-	管理クラス基底クラス
+	ManagementBase
+
+	管理基底クラス
+	抽象クラス
 
 
 */

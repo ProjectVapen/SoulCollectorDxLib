@@ -21,6 +21,7 @@ class ManagementBattle : public ManagementBase
 		
 		bool m_isSelect;
 
+		//	戦闘の流れ	//
 		typedef enum class _EBattleState{
 			eInitPhase,
 
@@ -36,17 +37,32 @@ class ManagementBattle : public ManagementBase
 		}eBattleState;
 		static eBattleState m_stateBattle;
 
-
+		//	選択処理の流れ	//
 		typedef enum class _ESelect{
+
 			eCardPhase,
 			eMediumPhase,
 			eEnemyPhase
+
 		}eSelect;
 		static eSelect m_stateSelect;
+
 
 		void SelectCardPhase();		//カード選択処理
 		void SelectMediumPhase();	//カードを入れる媒体を選択
 		void SelectEnemyPhase();	//敵選択処理
+
+		void InitPhase();	//戦闘の初期化
+
+		void DrawPhase();	//山札からカードを引く
+		void SelectPhase();	//選択処理を呼び出す奴
+
+		void TurnEnd();		//ターン終了処理
+
+		void EnemyPhase();	//	敵の思考部
+		void BattlePhase();	//戦闘開始。（ダメージ計算とか）
+
+		void EndBattle();
 
 	public:
 
@@ -64,17 +80,6 @@ class ManagementBattle : public ManagementBase
 		/*	画像解放処理	*/
 		void ImageDelete()override;
 
-		void InitPhase();	//戦闘の初期化
-
-		void DrawPhase();	//山札からカードを引く
-		void SelectPhase();	//選択処理を呼び出す奴
-
-		void TurnEnd();		//ターン終了処理
-
-		void EnemyPhase();	//	敵の思考部
-		void BattlePhase();	//戦闘開始。（ダメージ計算とか）
-
-		void EndBattle();
 
 		static const std::string m_sceneName;
 		
