@@ -34,6 +34,6 @@ class BattleEnemy{
 
 		bool IsDead(unsigned int element);		//“G‚Ì€‚ñ‚Å‚é‚©¶‚«‚Ä‚é‚©‚Ì”»’è €:true/¶:false
 
-
+		void ImageDelete();
 };
 

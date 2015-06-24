@@ -9,5 +9,6 @@ class SceneResult:
 		~SceneResult();
 
 		void Render()override;
+		void ImageDelete()override;
 };
 

@@ -43,7 +43,7 @@ m_ELEMENTFIFTH(4){
 
 
 BattleEnemy::~BattleEnemy(){
-	m_vecEnemy.clear();
+	
 }
 
 
@@ -94,4 +94,8 @@ bool BattleEnemy::EnemyBrain(){
 	//vl‚Ìˆ—
 
 	return true;
+}
+
+void BattleEnemy::ImageDelete(){
+	m_vecEnemy.clear();
 }

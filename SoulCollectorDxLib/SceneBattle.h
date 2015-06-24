@@ -13,5 +13,6 @@ class SceneBattle :
 		~SceneBattle();
 
 		void Render()override;
+		void ImageDelete()override;
 };
 

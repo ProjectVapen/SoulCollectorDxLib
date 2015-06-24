@@ -9,205 +9,175 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\AppMain">
-      <UniqueIdentifier>{aab47e18-33dd-4cc9-b3cf-0350d4e62d5e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\AppMain">
-      <UniqueIdentifier>{926bb5a8-4c6c-4061-907e-6c905934b2c4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\AppData">
-      <UniqueIdentifier>{cb38334a-cada-4c39-bf2a-3148616d3f5c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\AppEnemy">
-      <UniqueIdentifier>{da6b5593-aaac-43c6-81c7-704a5e70176f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\AppScenes">
-      <UniqueIdentifier>{077f6199-f20d-4ef9-97c5-b0d7b261ef2f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\AppBattle">
-      <UniqueIdentifier>{59c4fd68-fa02-47c7-9e34-c8a357fbc28f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\AppScenes">
-      <UniqueIdentifier>{e81b4d03-c7d0-4d06-bf40-dc3ea9b68dac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\AppManagement">
-      <UniqueIdentifier>{1c15c0af-2f75-4bd6-86cd-115dc4a84d57}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\AppManagement">
-      <UniqueIdentifier>{ff0c7c79-c016-4214-9431-5def0f590251}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\AppEnemy">
-      <UniqueIdentifier>{a6edee2f-f6fd-4594-b9ab-00a0edd35cec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\AppData">
-      <UniqueIdentifier>{365f61ab-f71a-4645-b69e-d26d8457fc23}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\AppBattle">
-      <UniqueIdentifier>{df2e3c7f-bcee-4192-92f0-4d50c35336a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\リソース ファイル">
+    <Filter Include="リソース ファイル">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FrameRate.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="AppController.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="AppData.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Application.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="AppManager.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
-    </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
-    </ClCompile>
-    <ClCompile Include="Entry.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameRate.cpp">
-      <Filter>ソース ファイル\AppMain</Filter>
-    </ClCompile>
-    <ClCompile Include="BattleCard.cpp">
-      <Filter>ソース ファイル\AppBattle</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="BattleEnemy.cpp">
-      <Filter>ソース ファイル\AppBattle</Filter>
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleCard.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="BattleMedium.cpp">
-      <Filter>ソース ファイル\AppBattle</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="BattlePlayer.cpp">
-      <Filter>ソース ファイル\AppBattle</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneStart.cpp">
-      <Filter>ソース ファイル\AppScenes</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTitle.cpp">
-      <Filter>ソース ファイル\AppScenes</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="DataCard.cpp">
-      <Filter>ソース ファイル\AppData</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="DataEnemy.cpp">
-      <Filter>ソース ファイル\AppData</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="DataMedium.cpp">
-      <Filter>ソース ファイル\AppData</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="DataPlayer.cpp">
-      <Filter>ソース ファイル\AppData</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="DataScene.cpp">
-      <Filter>ソース ファイル\AppData</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneBattle.cpp">
-      <Filter>ソース ファイル\AppScenes</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneResult.cpp">
-      <Filter>ソース ファイル\AppScenes</Filter>
-    </ClCompile>
-    <ClCompile Include="ManagementBattle.cpp">
-      <Filter>ソース ファイル\AppManagement</Filter>
-    </ClCompile>
-    <ClCompile Include="ManagementStart.cpp">
-      <Filter>ソース ファイル\AppManagement</Filter>
-    </ClCompile>
-    <ClCompile Include="ManagementTitle.cpp">
-      <Filter>ソース ファイル\AppManagement</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
-      <Filter>ソース ファイル\AppEnemy</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>ソース ファイル\AppManagement</Filter>
+    <ClCompile Include="Entry.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagementBattle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagementScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagementStart.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagementTitle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneResult.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneStart.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTitle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBattle.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppController.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="AppData.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Application.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="AppManager.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="BattleCard.h">
-      <Filter>ヘッダー ファイル\AppBattle</Filter>
-    </ClInclude>
-    <ClInclude Include="BattleEnemy.h">
-      <Filter>ヘッダー ファイル\AppBattle</Filter>
-    </ClInclude>
-    <ClInclude Include="BattleMedium.h">
-      <Filter>ヘッダー ファイル\AppBattle</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="BattlePlayer.h">
-      <Filter>ヘッダー ファイル\AppBattle</Filter>
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleEnemy.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleMedium.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="DataCard.h">
-      <Filter>ヘッダー ファイル\AppData</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="DataEnemy.h">
-      <Filter>ヘッダー ファイル\AppData</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="DataMedium.h">
-      <Filter>ヘッダー ファイル\AppData</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="DataPlayer.h">
-      <Filter>ヘッダー ファイル\AppData</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="DataScene.h">
-      <Filter>ヘッダー ファイル\AppData</Filter>
-    </ClInclude>
-    <ClInclude Include="Entry.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
-    </ClInclude>
-    <ClInclude Include="ManagementBattle.h">
-      <Filter>ヘッダー ファイル\AppManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="ManagementStart.h">
-      <Filter>ヘッダー ファイル\AppManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="ManagementTitle.h">
-      <Filter>ヘッダー ファイル\AppManagement</Filter>
-    </ClInclude>
-    <ClInclude Include="FrameRate.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
-    </ClInclude>
-    <ClInclude Include="Include.h">
-      <Filter>ヘッダー ファイル\AppMain</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneBase.h">
-      <Filter>ヘッダー ファイル\AppScenes</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneBattle.h">
-      <Filter>ヘッダー ファイル\AppScenes</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneResult.h">
-      <Filter>ヘッダー ファイル\AppScenes</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneStart.h">
-      <Filter>ヘッダー ファイル\AppScenes</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneTitle.h">
-      <Filter>ヘッダー ファイル\AppScenes</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
-      <Filter>ヘッダー ファイル\AppEnemy</Filter>
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>ヘッダー ファイル\AppManagement</Filter>
+    <ClInclude Include="FrameRate.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Include.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagementTitle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagementBattle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagementScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagementStart.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBattle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneResult.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneStart.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTitle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagementBase.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

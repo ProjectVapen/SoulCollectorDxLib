@@ -1,6 +1,6 @@
 #include "SceneTitle.h"
 #include "Application.h"
-extern std::unique_ptr<Application> pApp;
+
 
 SceneTitle::SceneTitle() 
 {
@@ -10,14 +10,16 @@ SceneTitle::SceneTitle()
 
 SceneTitle::~SceneTitle(){
 
-	DeleteGraph(m_backImage);
+	
 
 }
 
 void SceneTitle::Render(){
 
 	DrawExtendGraph(0, 0,
-		pApp->m_pWindow->GetWindowWidth(), pApp->m_pWindow->GetWidowHeight(), m_backImage, FALSE);
+		Application::m_windowWidth, Application::m_windowHeight, m_backImage, FALSE);
+}
 
-	DrawFormatString(0, 10, GetColor(255, 255, 255), "ƒ^ƒCƒgƒ‹‰æ–Ê");
+void SceneTitle::ImageDelete(){
+	DeleteGraph(m_backImage);
 }

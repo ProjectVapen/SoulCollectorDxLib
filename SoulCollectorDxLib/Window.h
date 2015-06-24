@@ -3,15 +3,15 @@ class Window
 {
 	private:
 		
-		int const m_WINDOWWIDTH;
-		int const m_WINDOWHEIGHT;
+		int const m_windowWidth;
+		int const m_windowHeight;
 	
 	public:
-		Window();
+
 		Window(int width,int height);
 		~Window();
 
-		int GetWindowWidth()const;
-		int GetWidowHeight()const;
+		int GetWidth()const;
+		int GetHeight()const;
 };
 

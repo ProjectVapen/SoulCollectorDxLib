@@ -1,7 +1,7 @@
 #pragma once
 /*
 	SceneBase
-	シーン基底クラス
+	シーン描画クラス
 	抽象クラス
 
 
@@ -13,5 +13,6 @@ class SceneBase
 
 		virtual void Render() = 0;
 
+		virtual void ImageDelete() = 0;
 };
 

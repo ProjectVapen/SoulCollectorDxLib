@@ -1,13 +1,23 @@
 #include "ManagementStart.h"
+#include "ManagementTitle.h"
+#include "ManagementBattle.h"
+
+#include "SceneStart.h"
+
 #include "Application.h"
-extern std::unique_ptr<Application> pApp;
-ManagementStart::ManagementStart()
+
+const std::string ManagementStart::m_sceneName = "Start";
+
+ManagementStart::ManagementStart(ManagementScene& managementScene) :
+ManagementBase(m_sceneName, managementScene)
 {
+	
 }
 
 
 ManagementStart::~ManagementStart()
 {
+	
 }
 
 void ManagementStart::PushKeyState(AppController::eGetController pushKey){
@@ -16,6 +26,30 @@ void ManagementStart::PushKeyState(AppController::eGetController pushKey){
 }
 
 void ManagementStart::PushKeyState(){
-	WaitKey();
-	pApp->m_pAppData->IsUpData(true);
+
+//	pApp->m_pAppData->IsUpData(true);
 }
+
+void ManagementStart::Init(){
+	//スタート画面の初期化処理
+	DrawFormatString(0, 10, GetColor(255, 255, 255), "スタート画面");
+	m_pScnene = std::make_unique<SceneStart>();
+}
+
+void ManagementStart::Render(){
+	m_pScnene->Render();
+}
+
+void ManagementStart::UpDate(){
+	//切り替えなどの更新処理
+	ChangeScene(ManagementScene::ChangeSceneData(
+		ManagementBattle::m_sceneName));
+}
+
+void ManagementStart::ImageDelete(){
+
+	m_pScnene->ImageDelete();
+	m_pScnene = nullptr;
+}
+
+

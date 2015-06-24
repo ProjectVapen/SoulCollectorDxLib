@@ -28,13 +28,14 @@
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="FrameRate.cpp" />
     <ClCompile Include="ManagementBattle.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="ManagementScene.cpp" />
     <ClCompile Include="ManagementStart.cpp" />
     <ClCompile Include="ManagementTitle.cpp" />
     <ClCompile Include="SceneBattle.cpp" />
     <ClCompile Include="SceneResult.cpp" />
     <ClCompile Include="SceneStart.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
+    <ClCompile Include="Transition.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -52,11 +53,11 @@
     <ClInclude Include="DataPlayer.h" />
     <ClInclude Include="DataScene.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Entry.h" />
     <ClInclude Include="FrameRate.h" />
     <ClInclude Include="Include.h" />
+    <ClInclude Include="ManagementBase.h" />
     <ClInclude Include="ManagementBattle.h" />
-    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="ManagementScene.h" />
     <ClInclude Include="ManagementStart.h" />
     <ClInclude Include="ManagementTitle.h" />
     <ClInclude Include="SceneBase.h" />
@@ -64,6 +65,7 @@
     <ClInclude Include="SceneResult.h" />
     <ClInclude Include="SceneStart.h" />
     <ClInclude Include="SceneTitle.h" />
+    <ClInclude Include="Transition.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

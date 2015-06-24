@@ -12,5 +12,6 @@ class SceneStart:
 		~SceneStart();
 
 		void Render()override;
+		void ImageDelete()override;
 };
 

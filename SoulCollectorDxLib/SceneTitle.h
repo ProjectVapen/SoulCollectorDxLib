@@ -12,5 +12,6 @@ class SceneTitle:
 		~SceneTitle();
 
 		void Render()override;
+		void ImageDelete()override;
 };
 
