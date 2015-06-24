@@ -12,7 +12,7 @@ class ManagementTitle : public ManagementBase
 
 		void Init()override;
 		void UpDate()override;
-		void Render()override;
+		bool Render()override;
 		void ImageDelete()override;
 
 		static const std::string m_sceneName;

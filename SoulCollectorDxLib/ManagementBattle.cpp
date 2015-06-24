@@ -7,7 +7,7 @@
 
 const std::string ManagementBattle::m_sceneName = "Battle";
 
-ManagementBattle::eBattleState ManagementBattle::m_stateBattle = eBattleState::eDrawPhase;
+ManagementBattle::eBattleState ManagementBattle::m_stateBattle = eBattleState::eInitPhase;
 ManagementBattle::eSelect ManagementBattle::m_stateSelect = eSelect::eCardPhase;
 
 
@@ -43,21 +43,40 @@ void ManagementBattle::Init(){
 	
 }
 
-void ManagementBattle::Render(){
+bool ManagementBattle::Render(){
 	m_pScnene->Render();
 	m_pBattleEnemy->Render();
 	
+	return true;
 }
 
 void ManagementBattle::UpDate(){
-	
-	DrawPhase();
-	SelectPhase();
-	TurnEnd();
-	EnemyPhase();
-	BattlePhase();
-	EndBattle();
+
+	InitPhase();
+
+	if (Render()){
+		DrawPhase();
+		SelectPhase();
+		TurnEnd();
+
+		EnemyPhase();
+
+		BattlePhase();
+
+		EndBattle();
+	}
+
 }
+
+void ManagementBattle::InitPhase(){
+	if (ManagementBattle::m_stateBattle != eBattleState::eInitPhase)return;
+	//戦闘の初期化,一度だけ呼ばれる
+
+	MessageBox(NULL, "戦闘開始！", "デバッグ", MB_OK);
+
+	ManagementBattle::m_stateBattle = eBattleState::eDrawPhase;
+}
+
 
 /////////////////////////////////////
 //戦闘時のプレイヤーの行動処理

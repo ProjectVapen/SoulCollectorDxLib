@@ -27,14 +27,14 @@ void ManagementTitle::PushKeyState(){
 }
 
 void ManagementTitle::Init(){
-	MessageBox(NULL, "Title", "デバッグ", MB_OK);
+
 	DrawFormatString(0, 10, GetColor(255, 255, 255), "タイトル画面");
 	m_pScnene = std::make_unique<SceneTitle>();
 }
 
-void ManagementTitle::Render(){
+bool ManagementTitle::Render(){
 	m_pScnene->Render();
-
+	return true;
 }
 
 void ManagementTitle::UpDate(){

@@ -36,8 +36,9 @@ void ManagementStart::Init(){
 	m_pScnene = std::make_unique<SceneStart>();
 }
 
-void ManagementStart::Render(){
+bool ManagementStart::Render(){
 	m_pScnene->Render();
+	return true;
 }
 
 void ManagementStart::UpDate(){

@@ -22,7 +22,8 @@ class ManagementBattle : public ManagementBase
 		bool m_isSelect;
 
 		typedef enum class _EBattleState{
-			
+			eInitPhase,
+
 			eDrawPhase,
 			eSelectPhase,
 			eTurnEnd,
@@ -58,10 +59,12 @@ class ManagementBattle : public ManagementBase
 
 		void Init()override;
 		void UpDate()override;
-		void Render()override;
+		bool Render()override;
 
 		/*	画像解放処理	*/
 		void ImageDelete()override;
+
+		void InitPhase();	//戦闘の初期化
 
 		void DrawPhase();	//山札からカードを引く
 		void SelectPhase();	//選択処理を呼び出す奴

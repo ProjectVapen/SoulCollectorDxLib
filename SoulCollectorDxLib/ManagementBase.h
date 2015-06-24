@@ -43,7 +43,7 @@ class ManagementBase{
 		virtual void UpDate() = 0;
 
 		//•`‰æ
-		virtual void Render() = 0;
+		virtual bool Render() = 0;
 
 		//‰æ‘œ‚Ì‰ğ•úˆ—
 		virtual void ImageDelete() = 0;
